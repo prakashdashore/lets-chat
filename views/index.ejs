@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Realtime Chat App</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/responsive.css' />
+  </head>
+  <body>
+    <div id="main">
+      <div id="promt">
+        <div id="dets" >
+          <h1>Enter Your Username 👻</h1>
+          <input placeholder="@username" id="usr">
+          <button id="join" >Join</button>
+        </div>
+      </div>
+      <div id="toggle" class="left">
+        <div class="left-nev">
+        
+            <div  class="online-users">Online :&nbsp;&nbsp;&nbsp;</div>
+            <div id="online">0</div>
+      
+
+          
+
+          
+
+        </div>
+
+        <div id="other-part">
+
+        </div>
+
+      </div>
+      <div class="right">
+        <div class="nev-baar">
+          <div class="logo">
+            <img src="../images/logo.png" alt="">
+          </div>
+          <div id="typ" ></div>
+          <div id="menu" >
+            <img id="cha" src="../images/menuu.png" alt="">
+          </div>
+        </div>
+        <div class="chat-area">
+
+          <div id="joined">
+          </div>
+
+          <div class="all-messages">
+
+            <div class="incoming"></div>
+
+            <div class="outgoing"></div>
+
+
+          </div>
+
+
+
+          <div class="search-baar">
+            <textarea placeholder="Type messages here....." name="massge" id="search" cols="30" rows="10"></textarea>
+            <button id="btn" type="submit" >
+              <img src="../images/send.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.3/axios.min.js" integrity="sha512-wS6VWtjvRcylhyoArkahZUkzZFeKB7ch/MHukprGSh1XIidNvHG1rxPhyFnL73M0FC1YXPIXLRDAoOyRJNni/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../javascripts/main.js"></script>
+  </body>
+</html>
