@@ -1,91 +1,102 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Labrada:wght@200&family=Nanum+Gothic&family=Raleway:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Labrada:wght@200&family=Nanum+Gothic&family=Raleway:wght@300&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Labrada', serif;
+  font-family: "Labrada", serif;
+  color: white;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 html,
 body {
+  overflow: hidden;
+
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+
 }
 
 #main {
+  overflow: hidden;
+
   position: relative;
   width: 80%;
   height: 80%;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+ 
   display: flex;
   justify-content: space-between;
+  border-radius: 10px;
+
 }
 .left {
+  overflow: hidden;
+
   /* position: absolute; */
+  background-color:#2A3942;
+
   padding: 10px;
 
   width: 30%;
   height: 100%;
-  background-color: rgb(81, 181, 148);
+  /* background-color: rgb(81, 181, 148); */
   transition: all ease-in 2sec;
-
+  /* background-image: linear-gradient(to top, #b224ef 0%, #7579ff 100%); */
 }
-.left-nev{
+.left-nev {
   padding: 10px 20px;
   width: 100%;
-  height:70px;
-  background-color: antiquewhite;
+  height: 70px;
+  /* background-color: antiquewhite; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-
+  background-color: #1D282F;
 }
-#inner{
-  font-size:25px;
+#inner {
+  font-size: 25px;
   font-weight: 800;
 }
 
-.logo{
+.logo {
   width: 50px;
   height: 50px;
-
 }
 
-.logo>img{
+.logo > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   transition: all ease-in 2sec;
-
-
 }
 
-#menu{
+#menu {
   width: 30px;
   height: 30px;
-
-}
-
-#menu>img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
   transition: all ease-in 2sec;
 
 
 }
 
-#other-part{
+#menu > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all ease-in 2sec;
+}
+
+#other-part {
   z-index: 99;
   /* position: relative; */
   width: 100%;
@@ -95,10 +106,10 @@ body {
   overflow-x: hidden;
 }
 
-#other-part>.temps{
+#other-part > .temps {
   z-index: 999;
   padding: 5px 10px;
-  padding-right:50px;
+  padding-right: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -108,27 +119,32 @@ body {
   /* background-color: aliceblue; */
   margin-top: 20px;
 }
-#other-part>.temps>img{
+#other-part > .temps > img {
   width: 40px;
   height: 40px;
   object-fit: cover;
   object-position: center;
-
 }
-#other-part>.temps:hover{
+#other-part > .temps:hover {
   cursor: pointer;
   background-color: rgb(226, 218, 208);
 }
 
-
-
-
 .right {
-  /* padding: 10px; */
+  overflow: hidden;
+
+  overflow: hidden;
+  padding: 10px;
 
   width: 70%;
   height: 100%;
-  background-color: rgb(203, 140, 140);
+  /* background-color: rgb(203, 140, 140); */
+  background-color:#2A3942;
+  border-left:1px solid white;
+  background-position: center;
+  background-size: cover;
+
+
 }
 
 .right > .nev-baar {
@@ -136,12 +152,12 @@ body {
   z-index: 99;
   width: 100%;
   height: 70px;
-  background-color: red;
+  background-color:#1D282F;
   /* border-radius: 30px ; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px ;
+  padding: 10px 20px;
 }
 
 .right > .chat-area {
@@ -149,10 +165,10 @@ body {
   width: 100%;
   height: calc(100% - 70px);
   border-radius: 10px;
-  background-color: aquamarine;
+  
 }
 
-.right > .chat-area> .all-messages{
+.right > .chat-area > .all-messages {
   overflow-x: hidden;
   overflow-y: auto;
   display: flex;
@@ -160,88 +176,70 @@ body {
   /* background-color: rgb(176, 109, 109); */
   width: 100%;
   height: 90%;
-  
 }
-.incoming{
-
+.incoming {
   padding: 10px 5px;
 
   width: 50%;
   height: 100%;
   /* background-color: aqua; */
-
 }
-.outgoing{
-  
+.outgoing {
   padding: 40px 20px;
   width: 50%;
   height: 100%;
   /* background-color: bisque; */
   /* display: flex;
   flex-direction: column; */
-  
 }
-#out-msg>h6{
+#out-msg > h6 {
   font-size: 18px;
-  
 }
-#out-msg{
-
+#out-msg {
   margin-top: 40px;
   float: right;
   white-space: nowrap;
-  padding:10px 15px;
+  padding: 10px 15px;
   width: max-content;
   height: max-content;
   min-width: 100px;
   min-height: 50px;
-  background-color: rgb(124, 110, 110);
+  /* background-color: rgb(124, 110, 110); */
   border-radius: 30px 0 0 30px;
 }
 
-#in-msg>h6{
+#in-msg > h6 {
   font-size: 18px;
 }
-#in-msg{
+#in-msg {
   margin-top: 40px;
   float: left;
   border-radius: 0 30px 30px 0;
 
-  padding:6px 10px;
+  padding: 6px 10px;
   width: max-content;
   height: max-content;
-  background-color: rgb(205, 205, 205);
+  /* background-color: rgb(205, 205, 205); */
 }
 
-#joined{
+#joined {
   /* z-index: 9; */
   display: none;
   padding: 5px 10px;
   position: absolute;
   top: 5%;
   left: 35%;
-  background-color: aqua;
+  background-color: rgb(223, 245, 245);
   min-width: 100px;
   min-height: 20px;
   max-width: max-content;
   max-height: max-content;
   transition: all ease-in 1.5sec;
-
-
 }
-#joined>p>span{
+#joined > p > span {
   text-transform: capitalize;
   font-weight: 600;
 }
-
-
-
-
-
-
-
-
-
 
 .right > .chat-area > .search-baar {
   width: 100%;
@@ -257,12 +255,10 @@ body {
   /* padding: 0px; */
 
   /* border-radius:40px; */
-
 }
 
-#search::-webkit-scrollbar{
+#search::-webkit-scrollbar {
   display: none;
-
 }
 
 #search {
@@ -274,14 +270,11 @@ body {
   height: 90%;
   outline: none;
   border: none;
-  /* background-color: red; */
+  background-color:#4f595f;
   border-radius: 40px;
   text-decoration: none;
-  
 
-
-
-  font-size:20px;
+  font-size: 20px;
   font-weight: 600;
 }
 #btn > img {
@@ -300,7 +293,7 @@ body {
   z-index: 99;
   width: 50px;
   height: 50px;
-  right:10px;
+  right: 10px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -320,11 +313,9 @@ body {
   justify-content: center;
   align-items: center;
   /* display: none; */
-
 }
 
-
-#dets{
+#dets {
   /* position: absolute; */
   display: flex;
   align-items: center;
@@ -336,39 +327,32 @@ body {
   height: 25vh;
   /* background-color: red; */
 }
-#dets>h1{
+#dets > h1 {
   font-weight: 800;
   font-size: 50px;
-  color: rgb(18, 241, 18)
-
+  color: rgb(18, 241, 18);
 }
-#dets>input{
-  font-weight:800;
-  padding:10px 20px;
+#dets > input {
+  font-weight: 800;
+  padding: 10px 20px;
   width: 100%;
   height: 80px;
-  font-size:25px;
+  font-size: 25px;
   color: rgb(11, 249, 11);
   background: none;
   border: none;
   outline: none;
-
 }
 
-
-#dets>button{
+#dets > button {
   padding: 10px 50px;
   color: white;
   font-size: 20px;
   background: none;
   border: none;
   outline: none;
-
 }
 
-#dets>button:hover{
+#dets > button:hover {
   background: rgba(124, 251, 13, 0.751);
 }
-
-
-

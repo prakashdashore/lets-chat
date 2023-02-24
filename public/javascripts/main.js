@@ -19,9 +19,11 @@ function toggl(){
 let flag = 0
   menu.addEventListener("click",function(e){
     if(flag===0){
-      too.style.top="10%";
+      too.style.top="12%";
       flag = 1;
       cha.src ="../images/cross.png"
+      menu.style.transform = 'rotate(-180 deg)';
+
 
     }else{
       too.style.top = "-100%"
